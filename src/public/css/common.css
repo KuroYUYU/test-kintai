@@ -1,0 +1,107 @@
+/* ベースレイアウトの事故を予防 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    width: 100%;
+    background: black;
+}
+
+/* ヘッダー内側 */
+.header__inner {
+    width: 100%;
+    min-height: 60px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ロゴ */
+.header__brand {
+    margin: 0;
+}
+
+.header__brand-link {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__brand-logo {
+    height: 30px;
+    width: auto;
+    display: block;
+}
+
+/* ナビ */
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    white-space: nowrap;
+}
+
+/* ナビリンク */
+.header__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.header__link:hover {
+    opacity: 0.8;
+}
+
+/* ログアウトフォーム */
+.header__form {
+    margin: 0;
+}
+
+/* ログアウトボタン */
+.header__button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+.header__button:hover {
+    opacity: 0.8;
+}
+
+/* レスポンシブデザイン */
+@media (min-width: 768px) and (max-width: 850px) {
+
+    .header__inner {
+        padding: 0px 20px;
+    }
+
+    .header__brand-logo {
+        height: 28px;
+        max-width: 200px;
+    }
+
+    .header__nav {
+        gap: 16px;
+    }
+
+    .header__link,
+    .header__button {
+        font-size: 14px;
+    }
+}

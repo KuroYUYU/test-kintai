@@ -1,0 +1,65 @@
+body {
+    background-color: lightgrey;
+}
+
+.index {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px 80px;
+}
+
+/* タイトル */
+.index__title {
+    position: relative;
+    margin: 0 0 70px;
+    padding-left: 16px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.index__title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 28px;
+    background: black;
+}
+
+/* スタッフ一覧テーブル */
+.index__table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    background: whitesmoke;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.index__table th,
+.index__table td {
+    padding: 14px 16px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.index__table thead th {
+    border-bottom: 2px solid #ddd;
+}
+
+.index__table th {
+    font-weight: 400;
+}
+
+.index__table a {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.index__table tr:last-child td {
+    border-bottom: none;
+}

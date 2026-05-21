@@ -1,0 +1,43 @@
+.verify-email {
+    max-width: 600px;
+    margin: 160px auto;
+    text-align: center;
+}
+
+/* 説明文 */
+.verify-email__text {
+    font-size: 17px;
+    line-height: 1.8;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+/* メインボタン（認証はこちらから） */
+.verify-email__main-button {
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 1px solid gray;
+    background-color: lightgray;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.verify-email__main-button:hover {
+    background-color: gray;
+}
+
+/* 再送ボタン */
+.verify-email__resend-link {
+    margin-top: 55px;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 14px;
+    color: dodgerblue;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration: none;
+}

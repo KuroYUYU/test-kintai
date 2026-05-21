@@ -1,0 +1,109 @@
+body {
+    background: whitesmoke;
+}
+
+/* 全体調整 */
+.attendance {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 170px 16px;
+}
+
+/* ステータスバッジ */
+.attendance__badge {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 9999px;
+    background: lightgray;
+    color: dimgrey;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+/* 日付 */
+.attendance__date {
+    margin-top: 10px;
+    font-size: 24px;
+    color: black;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+}
+
+/* 時刻 */
+.attendance__time {
+    margin: 0;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 0.06em;
+    line-height: 1;
+}
+
+/* ボタンエリア */
+.attendance__actions {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    letter-spacing: 0.25em;
+}
+
+/* ボタン */
+.attendance__actions-row {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.attendance__actions-row form {
+    flex: 1;
+    max-width: 145px;
+}
+
+.attendance__btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 14px;
+    background: black;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.25em;
+}
+
+.attendance__blake-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 14px;
+    background: #fff;
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.25em;
+}
+
+.attendance__btn:hover {
+    opacity: 0.92;
+}
+
+/* 退勤後メッセージ */
+.attendance__done {
+    margin: 16px 0 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #111;
+}
